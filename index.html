@@ -4006,11 +4006,15 @@
                 with constant difference between them that is equal to that prime.This is the sieve's key distinction from using trial division to sequentially test each candidate number for divisibility by each prime.Once all the multiples of 
                 each discovered prime have been marked as composites, the remaining unmarked numbers are primes.
             </p>
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/SieveofEratosthenes5.jpg" alt="">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/SieveofEratosthenes5.jpg" class="img-fluid mx-auto" alt="">
             <br>
-            <input type="text" id="sievein" class="form__field" placeholder="Enter the number upto which prime numbers are to be found out">
-            <br>
-            <button class="btn btn-dark" onclick="sievefind()">Find</button>
+            <!-- <div class="d-flex justify-content-center"> -->
+             <input style="text-align: center;" type="text" id="sievein" class="form__field" placeholder="Enter the number upto which prime numbers are to be found out">
+            <!-- </div> -->
+            <br><br>
+            <div class="mx-auto">
+            <button class="btn btn-dark btn-lg" onclick="sievefind()">Find</button>
+            </div>
             <br>
             <h4 id="sieveans"></h4>
         </div>
@@ -14192,18 +14196,28 @@
             <h3>\[x^n \space =  \space y\]</h3>
             <div class="coll">
                 <form class="form-inline">
-                    <input type="number" id="xval"  value='' placeholder="Enter x"
-                        style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color: var(--appimage);"><br>       
-                    <input type="number" id="yval"  value='' placeholder="Enter y"
-                        style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color: var(--appimage);"><br>
-                    <br>
-                <br>
-                <button type="button" class="btn btn-light" onclick="exposol();">
-                    Calculate
-                </button>
-                <button type="button" class="btn btn-light" onclick="this.form.reset();">
-                    Reset
-                </button>
+                    <div class="container-fluid text-align:center">
+                    <div class="row">
+                        <div class="col">
+                     <input type="number" id="xval"  value='' placeholder="Enter x"
+                        style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color: var(--appimage);"><br>   
+                        </div>
+                        <div class="col">    
+                         <input type="number" id="yval"  value='' placeholder="Enter y"
+                            style="border: none; background: transparent; border-bottom: 0.0625rem solid white; color: var(--appimage);"><br>
+                         <br>
+                        </div>
+                         <br>
+                 <div class="col">
+                  <button type="button" class="btn btn-light" onclick="exposol();">
+                      Calculate
+                  </button>
+                  <button type="button" class="btn btn-light" onclick="this.form.reset();">
+                      Reset
+                  </button>
+                 </div>
+                </div>
+            </div>
                 </form>
             </div>
             <br>
